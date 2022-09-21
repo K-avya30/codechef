@@ -1,0 +1,15 @@
+t = int(input())
+x = 0
+for i in range(0,t):
+    a,b = map(int,input().strip().split())
+    c,d = map(int,input().strip().split())
+    if c>=a and d>=b:
+        x = c-a
+        y = d-b
+        a = a+x
+        b = b+y
+        if c==a and d==b:
+            print("POSSIBLE")
+    else:
+        print("IMPOSSIBLE")
+        
