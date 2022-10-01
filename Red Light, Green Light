@@ -1,0 +1,9 @@
+t = int(input())
+for i in range(t):
+    x,n = map(int,input().split())
+    y = list(map(int,input().split()))
+    count = 0
+    for j in y:
+        if j>n:
+            count = count+1
+    print(count)
